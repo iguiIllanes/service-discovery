@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ms-account
+
+server:
+  port: 6060

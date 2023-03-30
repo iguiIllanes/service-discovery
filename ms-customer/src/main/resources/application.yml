@@ -1,0 +1,17 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: ms-customer
+
+eureka:
+  client:
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+keycloak:
+  client:
+    id: backend
+    secret: MlgHYNskhLbmHWMpUr3BlLCVE6dSCqiV
