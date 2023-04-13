@@ -13,7 +13,7 @@ class Account @Autowired constructor(
 ) {
     @GetMapping("/test")
     fun test(): String {
-        return customerClient.test()
+        return "Hola!"
     }
 
     @GetMapping("/token")

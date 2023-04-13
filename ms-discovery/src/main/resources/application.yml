@@ -1,12 +1,7 @@
-server:
-  port: 8761
-
 spring:
   application:
-  name: ms-discovery-server
-
-eureka:
-  client:
-    register-with-eureka: false
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+    name: ms-discovery
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://localhost:8888

@@ -1,0 +1,56 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:iguiIllanes/config-server.git
+          clone-on-start: true
+          ignore-local-ssh-settings: false
+          host-key: config_server
+          host-key-algorithm: ssh-rsa
+          private-key: |
+                        -----BEGIN OPENSSH PRIVATE KEY-----
+                        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+                        NhAAAAAwEAAQAAAYEAro4ug8vc2lkkGUNzMM4+I+ZNmHf5ah9GH1+PowuX9Q/kX2ypNrhs
+                        J7LlOsJBJfUJhRJxYLh9LW3uEI4QxeugLfWwKXZCSKMgb/vxWkFICnrPRRCGFYaFBYX1iK
+                        /hjgbWef9hkKOXpa/1t9coJ1EAEqHTOmWVXHzjSTfHtkgYtyjX+bpA7rBoRgJ/3ahcPMq7
+                        cSTj1VWv1X0PzFCJhJsQB19MWq4jDygaK27ZlEWEL6a6E5BufzB2nJHw78D9r6cp0UGWEI
+                        l3MT1H8P2Xg2JD23syu4XUjmzAjdZ6n7j2kFp91Zxgsx3QQ4bZAK+xwNTeAXVLI4UAzdbN
+                        XqHc6+reRNcmBPlkaVvaTluBkAuttNb76PQrFhttxYJTp1IWXWJKS5Kj5TsgmE3R1cL+mc
+                        dN8gnlF4YYJWiO46fZ2PeRBoS8A220HA4PqeYyCYRYRh122otDt9znSDq9HK8bU6oBiwFb
+                        lOhcIe5ALIK87qwn7PPYQF6XAcmZ1Og6QytZKrntAAAFoD+hxPM/ocTzAAAAB3NzaC1yc2
+                        EAAAGBAK6OLoPL3NpZJBlDczDOPiPmTZh3+WofRh9fj6MLl/UP5F9sqTa4bCey5TrCQSX1
+                        CYUScWC4fS1t7hCOEMXroC31sCl2QkijIG/78VpBSAp6z0UQhhWGhQWF9Yiv4Y4G1nn/YZ
+                        Cjl6Wv9bfXKCdRABKh0zpllVx840k3x7ZIGLco1/m6QO6waEYCf92oXDzKu3Ek49VVr9V9
+                        D8xQiYSbEAdfTFquIw8oGitu2ZRFhC+muhOQbn8wdpyR8O/A/a+nKdFBlhCJdzE9R/D9l4
+                        NiQ9t7MruF1I5swI3Wep+49pBafdWcYLMd0EOG2QCvscDU3gF1SyOFAM3WzV6h3Ovq3kTX
+                        JgT5ZGlb2k5bgZALrbTW++j0KxYbbcWCU6dSFl1iSkuSo+U7IJhN0dXC/pnHTfIJ5ReGGC
+                        VojuOn2dj3kQaEvANttBwOD6nmMgmEWEYddtqLQ7fc50g6vRyvG1OqAYsBW5ToXCHuQCyC
+                        vO6sJ+zz2EBelwHJmdToOkMrWSq57QAAAAMBAAEAAAGAP+g6S3KF50Mfnkg9ki7QPWCCJE
+                        I4hIvypmXcNrt15PjuialEwo3+uwIaPssEAxuVYqz/6YNiARHwSQtaRLwhpvH+jw+G8QUY
+                        SSeak4q3D28rF4QXMyZO6VjELkkGcXM7bur7E3Nxf+3OLoKNZueW+TtaFFVAu93VcOcFLU
+                        10DwrbF8kDIOBhLNCZc9PCAVfQDHqPF3oJqEXjVNBfqLcExU40rDZ5C4GJI0GwU0KoRLHs
+                        CmGksthRdL1R0tV7i6XNZGtwA2sOGP7nsJiAJQim3ND/v1vhVcRjFOiOkKeYLLg0mISVEv
+                        Drfn+pmRWxKMS/cSqFz49JxBfiGlebAQKICZLtVEeJvfXnSVzcW9iMXCObBoLvdnf0iNaT
+                        h2WGQTmVcBLbNoR4Ak8GED9swxEp3Kw25jhALSOIjCN9QJ6nm7kbfq1UfVMTRQjwb9W0FM
+                        iT9rHHLv2HY8w0/wt7HqWDJc20yh3pTdRlRp0+5hA33+5kEJvK8+i8KttGM66SZ8cBAAAA
+                        wQCzM++DMPTA+klAmhQaw+ZzfQiyYQDwx5K7e38s22ETfFAn/RsYXRAIjxxST1hx4ilfBR
+                        tbcUZ04uXKWmMNG0pU9HD9KnjmuEfDGn/by6zwhSaOkS4WjKbLo0ZYE9A2omw8nm/9iM9G
+                        wmH/dHIyF8qBlqEa1QvwZrBZk9tzkkDlwxMmThz30v4r533/nO7rH5+bXqQy5Ibak7R37e
+                        S4GT9YKUFSjneqcAzTSHQYCiVIQyLtqvTIsAdzoQ7iOAFu9uQAAADBAOL2KJWHYVVaStRG
+                        bxFBltLy/mu1bWJtEO6M6dZ0qOlZXGfJdwY/aFxdcwONaQaVA/wD9FLKmqQ2BNzTY+Eld4
+                        O2l/sc4al4LwyCJiopz8lAi1fjYRLXUT7iU/RLWLw2NLcDkvrGWR4bnbYnKTPBscCuW0wa
+                        Ex9gRInNodLb1piUTtIIlyxwOHFlEV4HQopjoTsSlmFN+pBQ1KZR1Mp8eQvk9SEXEob2P2
+                        p6zc6BsLI07IpFZggdJ3joh667rTo0IQAAAMEAxOOGapDjkCqYDryR8vu9Yml4fCjojU5a
+                        RmppUW1ZnriQqOXol5KmIfrmgO3aNaxbRT7nyhR/hQEEvmPfLwfL0C6WBxP9tVSZ6q3UQK
+                        3nr6BZin5igVdTrYjthOGCLAvFPm7PQ3EadIJOFD2c0xA0nd0nZbseKsJjZ/T2cu+/LxbS
+                        uYFqwErDT4FYvVj7E3wddOdMTZEuueGT11fwaWBiq51CEmYm+bc0+/W8xhVcyg2ui0XxdA
+                        hqYhChEmlVR4xNAAAAKWlnbmFjaW9pbGxhbmVzQElnbmFjaW9zLU1hY0Jvb2stUHJvLmxv
+                        Y2FsAQ==
+                        -----END OPENSSH PRIVATE KEY-----
+        encrypt:
+          enabled: true
+encrypt:
+  key: arquitecturaDeSoftware2023
